@@ -1,4 +1,4 @@
-LinMan is a Linux Game and Modding Manager.
+LinMan is a Linux Game Library and Modding Manager.
 
 Current state:
 Active development of UX/UI.
