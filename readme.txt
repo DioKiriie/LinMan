@@ -1,4 +1,7 @@
-LinMan is a Linux Mod Managers Installer.
-It is developed in Godot 4.3-stable.
-It offers easy install process for various Mod Managers.
-Also comes with additional features to complement some Mod Managers or Games.
+LinMan is a Linux Game and Modding Manager.
+
+Current state:
+Active development of UX/UI.
+
+LinMan is made in Godot 4.3-stable.
+It offers various install and managment solutions for Games and Mod Managers.
