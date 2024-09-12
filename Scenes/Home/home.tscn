@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://plpoikhno6u"]
+[gd_scene load_steps=5 format=3 uid="uid://plpoikhno6u"]
 
 [ext_resource type="Theme" uid="uid://co5j6jbhgq51l" path="res://Themes/light.theme" id="1_aqxda"]
+[ext_resource type="Texture2D" uid="uid://b2mnnv4tro76s" path="res://Images/Background/linman_background.png" id="2_lj7mh"]
 
 [sub_resource type="GDScript" id="GDScript_hhgww"]
 script/source = "extends Control
@@ -29,6 +30,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_lj7mh")
 expand_mode = 1
 
 [node name="Content" type="VBoxContainer" parent="Background"]
@@ -46,15 +48,15 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_hr5t5")
 bbcode_enabled = true
 text = "[center]
 [img=350]res://Images/Logo/linman_logo_transparent.png[/img]
-[b]LinMan[/b]
-[b]LinMan[/b] is a versatile Linux Game and Modding Manager, crafted in the Godot 4.3 engine. 
+[/center]
+		[b]LinMan[/b]
+	[b]LinMan[/b] is a versatile Linux Game and Modding Manager, crafted in the Godot 4.3 engine. 
 
-[u]Key Features:[/u]
+		[u]Key Features:[/u]
 
 	- [b]Active Focus:[/b] Enhancing UX/UI for a smoother experience.
-	- [b]Ease of Use:[/b] Offers a range of solutions for installing and managing games and mods all from within [b]LinMan[/b].
-	- [b]Built with Godot:[/b] Open Source Game Engine used to make this app.
-[/center]"
+	- [b]Ease of Use:[/b] Control everything from within the app.
+	- [b]Built with Godot:[/b] Open Source Game Engine used to make this app."
 
 [node name="BottomMenuPanel" type="TextureRect" parent="Background"]
 layout_mode = 1

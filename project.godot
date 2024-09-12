@@ -19,7 +19,8 @@ config/custom_user_dir_name="LinMan"
 config/features=PackedStringArray("4.3", "Forward Plus")
 run/low_processor_mode=true
 run/low_processor_mode_sleep_usec=10000
-boot_splash/image="res://Images/Logo/linman_logo_transparent.png"
+boot_splash/image="res://Images/BootSplash/linman_boot_splash.png"
+boot_splash/fullsize=false
 config/icon="res://Images/Logo/linman_logo_background.png"
 boot_splash/minimum_display_time=5000
 
