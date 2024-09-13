@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://plpoikhno6u"]
+[gd_scene load_steps=7 format=3 uid="uid://plpoikhno6u"]
 
 [ext_resource type="Theme" uid="uid://co5j6jbhgq51l" path="res://Themes/light.theme" id="1_aqxda"]
 [ext_resource type="Texture2D" uid="uid://b2mnnv4tro76s" path="res://Images/Background/linman_background.png" id="2_lj7mh"]
+[ext_resource type="Texture2D" uid="uid://b8xikyjdxwstb" path="res://Images/Logo/linman_logo_transparent.png" id="3_5tp1f"]
+[ext_resource type="Texture2D" uid="uid://cpj2758wpkgy5" path="res://Images/UI/linman_bottom_menu_panel.png" id="3_xdk13"]
 
 [sub_resource type="GDScript" id="GDScript_hhgww"]
 script/source = "extends Control
@@ -41,22 +43,48 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="WelcomeNotice" type="RichTextLabel" parent="Background/Content"]
+[node name="DefaultContent" type="Control" parent="Background/Content"]
 layout_mode = 2
+
+[node name="WelcomeNotice" type="RichTextLabel" parent="Background/Content/DefaultContent"]
+layout_mode = 2
+offset_top = 4.0
+offset_right = 1280.0
+offset_bottom = 720.0
 size_flags_vertical = 3
 theme_override_styles/normal = SubResource("StyleBoxEmpty_hr5t5")
 bbcode_enabled = true
-text = "[center]
-[img=350]res://Images/Logo/linman_logo_transparent.png[/img]
-[/center]
+text = "
+
+
+
+
+
+
+
+
+
+
 		[b]LinMan[/b]
-	[b]LinMan[/b] is a versatile Linux Game and Modding Manager, crafted in the Godot 4.3 engine. 
+	[b]LinMan[/b] is a versatile Linux Game and Modding Manager.
 
 		[u]Key Features:[/u]
 
 	- [b]Active Focus:[/b] Enhancing UX/UI for a smoother experience.
 	- [b]Ease of Use:[/b] Control everything from within the app.
 	- [b]Built with Godot:[/b] Open Source Game Engine used to make this app."
+
+[node name="TextureRect" type="TextureRect" parent="Background/Content/DefaultContent"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -175.0
+offset_right = 175.0
+offset_bottom = 350.0
+grow_horizontal = 2
+texture = ExtResource("3_5tp1f")
+expand_mode = 1
 
 [node name="BottomMenuPanel" type="TextureRect" parent="Background"]
 layout_mode = 1
@@ -68,6 +96,7 @@ offset_top = -100.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 3
+texture = ExtResource("3_xdk13")
 
 [node name="GlobeButton" type="TextureButton" parent="Background/BottomMenuPanel"]
 layout_mode = 1
