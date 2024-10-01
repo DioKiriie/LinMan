@@ -1,4 +1,4 @@
-LinMan is a Linux Game Library and Modding Manager.
+ModManagerInstaller is a Linux Game Library and Mod Manager Installer.
 
 Current state:
 Active development of UX/UI of main window.
